@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/Cartscollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbarCart"
+            layout="@layout/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </include>
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbarCart">
+            <TextView
+                android:id="@+id/cartEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="Cart Empty"/>
+
+            <ListView
+                android:background="@drawable/radius_listview"
+                android:id="@+id/cart_listview"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+        </FrameLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:id="@+id/priceLayout"
+            android:layout_below="@+id/frame_layout"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Tổng tiền :"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_weight="6"
+                    android:textSize="24sp"
+                    android:hint="PRICE"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalPrice" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/button_oder"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceLayout"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:text="Đặt đơn hàng"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/button_continuousShop"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_oder"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:text="Tiếp tục mua sắm"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>
+

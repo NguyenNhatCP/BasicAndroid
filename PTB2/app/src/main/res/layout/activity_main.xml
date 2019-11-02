@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:id="@+id/tv_Title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="#008900"
+            android:gravity="center"
+            android:text="Giải Phương Trình Bậc 2"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_A"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_Title"
+            android:layout_marginTop="10dp"
+            android:background="#d6ffdc"
+            android:text="nhập a:" />
+
+        <EditText
+            android:id="@+id/edit_NhapA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_Title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_A"
+            />
+
+        <TextView
+            android:id="@+id/tv_B"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_A"
+            android:layout_marginTop="30dp"
+            android:background="#d6ffdc"
+            android:text="nhập b:" />
+
+        <EditText
+            android:id="@+id/edit_NhapB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_NhapA"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@id/tv_B" />
+
+        <TextView
+            android:id="@+id/tv_C"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_B"
+            android:layout_marginTop="30dp"
+            android:background="#d6ffdc"
+            android:text="nhập c:" />
+
+        <EditText
+            android:id="@+id/edit_NhapC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_NhapB"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_C"
+           />
+
+
+        <Button
+            android:id="@+id/btn_Tieptuc"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_C"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#d6d7d6"
+            android:text="Tiếp Tục"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_Giai"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_C"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btn_Tieptuc"
+            android:background="#d6d7d6"
+            android:text="Giải"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_Thoat"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_C"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btn_Giai"
+            android:background="#d6d7d6"
+            android:text="Thoát"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/btn_Giai"
+            android:layout_marginTop="20dp"
+            android:background="#008900"
+            android:text="Kết Quả:"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

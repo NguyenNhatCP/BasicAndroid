@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0066FF"
+        android:padding="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+            <TextView
+                android:id="@+id/tv_Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize = "35dp"
+                android:layout_alignParentTop = "true"
+                android:layout_centerHorizontal = "true" >
+            </TextView>
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_below="@id/tv_Login"
+                android:textSize="25dp">
+            </TextView>
+            <EditText
+                android:id="@+id/edit_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input username!"
+                android:layout_alignLeft="@id/tv_username"
+                android:layout_below="@id/tv_username"/>
+            <TextView
+                android:id="@+id/tv_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_username"
+                android:layout_alignRight="@id/tv_username"
+                android:text="Password"
+                android:layout_below="@id/edit_user"
+                android:textSize="25dp">
+            </TextView>
+            <EditText
+                android:id="@+id/edit_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input password!"
+                android:inputType="textPassword"
+                android:layout_alignLeft="@id/tv_pass"
+                android:layout_below="@id/tv_pass"/>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_centerInParent="true"
+                android:background="#3f76ff"
+                android:textColor="#fff"
+                android:layout_below="@id/edit_pass"/>
+            <TextView
+                android:id="@+id/tv_Infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_username"
+                android:textColor="#00FFFF"
+                android:layout_below="@id/btn_login"
+                android:textSize="25dp"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

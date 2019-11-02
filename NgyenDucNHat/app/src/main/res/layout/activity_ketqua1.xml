@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tv_Kq"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Kết Quả"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:background="#59d97c"
+        />
+    <TextView
+        android:id="@+id/tv_Cong"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:text="Tổng 2 số:"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_Kq"
+        />
+    <TextView
+        android:id="@+id/tv_KqCong"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="KQ"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_Kq"
+       android:layout_toRightOf="@id/tv_Cong"
+        />
+    <TextView
+        android:id="@+id/tv_Nhan"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:text="Tích 2 số:"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_Cong"
+        />
+    <TextView
+        android:id="@+id/tv_KqNhan"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="KQ"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_Cong"
+        android:layout_toRightOf="@id/tv_Nhan"
+        />
+    <TextView
+        android:id="@+id/tv_Hieu"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:text="Hiệu 2 số:"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_Nhan"
+        />
+    <TextView
+        android:id="@+id/tv_KqTru"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="KQ"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_Nhan"
+        android:layout_toRightOf="@id/tv_Nhan"
+        />
+    <TextView
+        android:id="@+id/tv_Thuong"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:text="Thương 2 số:"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_Hieu"
+        />
+    <TextView
+        android:id="@+id/tv_KqChia"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="KQ"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_KqTru"
+        android:layout_toRightOf="@id/tv_Thuong"
+        />
+
+    <Button
+        android:id="@+id/btn_Back"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Trở Về"
+        android:layout_below="@id/tv_Thuong"
+        android:textColor="#7ad4f0"
+        />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EE0000"
+        android:padding="50dp">
+<TableLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFF66"
+    android:stretchColumns="2"
+    android:shrinkColumns="0"
+    android:padding="16dp">
+    <TableRow>
+        <TextView
+            android:text="Đổi nhiệt độ"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_span="3"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+        android:text="Độ F"
+        android:gravity="center"
+        android:textSize="25dp"
+        />
+        <EditText
+            android:id="@+id/edit_DoF"
+            android:layout_span="3"
+           >
+        </EditText>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Độ C"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:id="@+id/edit_DoC"
+            android:layout_span="3"
+            >
+        </EditText>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btn_Doi"
+            android:text="Đổi" />
+        <Button
+            android:id="@+id/btn_Xoa"
+            android:text="Xóa" />
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/btn_Thoat"
+            android:text="Thoát"
+            android:layout_span="3"/>
+    </TableRow>
+</TableLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

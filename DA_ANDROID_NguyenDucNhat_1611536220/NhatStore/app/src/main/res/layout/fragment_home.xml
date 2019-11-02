@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper
+        android:id="@+id/ViewFliper"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        ></ViewFlipper>
+    <TextView
+        android:id="@+id/tv_SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:textColor="#006aff"
+        android:text="Sản phẩm mới nhất"
+        android:layout_below="@id/ViewFliper"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_NewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_SP">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+</ScrollView>

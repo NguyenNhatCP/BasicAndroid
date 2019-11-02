@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Chương trình chính"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:background="#59d97c"
+        />
+    <Button
+        android:id="@+id/btn_TinhToan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Tính Toán"
+        android:textColor="#7ad4f0"
+        />
+    <Button
+        android:id="@+id/btn_PTB1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="PT Bậc 1"
+        android:textColor="#7ad4f0"
+       />
+    <Button
+        android:id="@+id/btn_TongN"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Tổng N"
+        android:textColor="#7ad4f0"
+       />
+</LinearLayout>

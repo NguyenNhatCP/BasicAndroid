@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:id="@+id/tv_Title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Music player"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:textSize="30dp"/>
+    <ImageView
+        android:id="@+id/image_bg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Title"
+        android:src="@drawable/bg"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btn_next"
+        android:text="@string/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_play"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft ="true"
+        />
+    <Button
+        android:id="@+id/btn_play"
+        android:text="@string/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btn_play"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn_play"
+        android:layout_alignLeft="@id/image_bg"
+        />
+    <Button
+        android:id="@+id/btn_pause"
+        android:text="@string/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_pause"
+        android:layout_alignTop="@id/btn_play"
+        android:layout_alignRight="@id/image_bg"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        android:id="@+id/btn_previous"
+        android:layout_alignTop="@id/btn_play"
+        android:layout_toRightOf="@id/btn_pause"
+       android:layout_alignParentRight="true" />
+    <SeekBar
+        android:id="@+id/skSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/image_bg"
+        android:layout_alignLeft="@id/image_bg"
+        android:layout_above="@id/btn_pause"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="left Text"
+        android:id="@+id/tv_TimeSong"
+        android:layout_above="@id/skSong"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Song Name"
+        android:id="@+id/tv_SongName"
+        android:layout_alignBaseline="@+id/tv_TimeSong"
+        android:layout_alignBottom="@+id/tv_TimeSong"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="right Text"
+        android:id="@+id/totalTime"
+        android:layout_above="@id/skSong"
+        android:layout_alignRight="@+id/btn_previous"
+        android:layout_alignEnd="@+id/btn_previous"
+        />
+</RelativeLayout>

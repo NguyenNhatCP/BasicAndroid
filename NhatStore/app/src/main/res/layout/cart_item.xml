@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cartImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/CartName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_toRightOf="@+id/cartImage"
+        android:layout_marginTop="20dip"
+        tools:text="@string/name"
+        />
+    <LinearLayout
+        android:id="@+id/Linear_quantity"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/CartName"
+        android:layout_toEndOf="@+id/cartImage"
+        android:layout_toRightOf="@+id/cartImage">
+
+        <Button
+            android:id="@+id/decrementCart_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:onClick="decrement"
+            android:textSize="18sp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/quantity_Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/initial_quantity_value"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/incrementCart_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:onClick="increment"
+            android:textSize="22sp"
+            android:text="+" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/CartPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        tools:text="@string/price"
+        android:layout_below="@+id/Linear_quantity"
+        android:layout_toEndOf="@+id/cartImage"
+        android:layout_toRightOf="@+id/cartImage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/CartPrice"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btnRemove"
+        android:layout_toRightOf="@+id/CartPrice"
+        android:background="@drawable/radius_btnformation"
+        android:text="Remove"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

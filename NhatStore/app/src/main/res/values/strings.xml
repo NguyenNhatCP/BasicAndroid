@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Shop thể thao</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="ACCEPT">ACCEPT</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="title_activity_product">Sản phẩm</string>
+    <string name="title_activity_productsdetail">Chi tiết sản phẩm</string>
+    <string name="title_activity_Cart">Giỏ hàng</string>
+
+
+    <string name="name">Tên SP</string>
+    <string name="quantity">Số lượng</string>
+    <string name="brew_tea">ADD TO CART</string>
+    <string name="initial_cost">$0.00</string>
+    <string name="initial_quantity_value">1</string>
+    <string name="total">Tổng tiền:</string>
+    <string name="price">Giá:</string>
+    <string name="action_cart">Shopping Cart</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="Product_name">Product Name</string>
+    <string name="item_added">Item Added to WishList</string>
+    <string name="item_removed">Item Removed from WishList</string>
+    <string name="toolbar_favorite_snack">"Toolbar favorite clicked: "</string>
+    <string name="wish_list">Wish List</string>
+    <string name="wish_list_branch">Wish List</string>
+
+    <string name="sync_account_type">fragrancecart.delaroystudios.com</string>
+    <string name="content_authority">com.delaroystudios.fragrancecart</string>
+    <string name="title_activity_location">Map</string>
+
+</resources>

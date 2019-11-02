@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/ic_newproduct"
+        android:layout_gravity="top|left"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/Image_NewProduct"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_nameNewProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:text="Tên Sản phẩm"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_CompanyNameProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Xuất sứ"
+            android:textColor="#becad0"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_priceNewProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#ea0400"
+            android:text="Giá Sản phẩm"/>
+
+    </LinearLayout>
+</FrameLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
